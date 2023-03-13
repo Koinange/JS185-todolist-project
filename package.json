@@ -7,6 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "heroku-postbuild": "npm install --production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon todos.js"
   },
@@ -15,6 +16,7 @@
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-loki": "^1.2.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
@@ -23,6 +25,10 @@
     "pg": "^8.10.0",
     "pug": "^3.0.2"
   },
+  "engines": {
+    "node": "16.16.0",
+    "npm": "9.5.1"
+  }
   "devDependencies": {
     "nodemon": "^2.0.20"
   }
